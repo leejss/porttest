@@ -19,16 +19,23 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-remark",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-typescript",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./static/images/",
+        path: `${__dirname}/static/images`,
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "works",
+        path: `${__dirname}/content/works`,
+      },
+      __key: "works",
     },
     {
       // Parsing Markdown
@@ -69,6 +76,16 @@ module.exports = {
         theme_color: `#663399`,
         display: `standalone`,
         icon: `./static/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        formats: ["auto", "webp"],
+        placeholder: `dominantColor`,
+        quality: 70,
+        breakpoints: [750, 1080, 1366, 1920],
+        backgroundColor: `transparent`,
       },
     },
   ],

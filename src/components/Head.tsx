@@ -13,7 +13,7 @@ type HeadProps = {
 
 const Head: React.FC<HeadProps> = ({
   description,
-  lang,
+  lang: metalang,
   keywords,
   title,
   image,
@@ -34,14 +34,14 @@ const Head: React.FC<HeadProps> = ({
   `);
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaLang = lang || "kor";
+  const lang = metalang || "kor";
   const metaKeywords = keywords || [];
   const metaImage =
     site.siteMetadata.siteUrl + `${image || site.siteMetadata.image}`;
 
   return (
     <Helmet
-      htmlAttributes={{ metaLang }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[

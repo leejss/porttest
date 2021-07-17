@@ -3,9 +3,9 @@ import Menu from "./Menu";
 
 const Navigation: React.FC = () => {
   return (
-    <div>
+    <nav>
       <Menu />
-    </div>
+    </nav>
   );
 };
 

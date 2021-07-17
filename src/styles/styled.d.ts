@@ -2,18 +2,35 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    textColor: string;
-    textColorDarker: string;
-    textColorLighter: string;
+    colors: {
+      primaryDark: string;
+      secondary: string;
+      secondaryLight: string;
+      secondaryDark: string;
+      lightest: string;
+      lighter: string;
+      light: string;
+      mediumLight: string;
+      medium: string;
+      mediumDark: string;
+      dark: string;
+      darker: string;
+      darkest: string;
+      black: string;
+      hover: string;
+    };
+
     fontFamilies: {
       primary: string;
     };
+
     fontWheights: {
       thin: number;
       regular: number;
       bold: number;
       extraBold: number;
     };
+
     fontSizes: {
       small: string;
       normal: string;
@@ -25,6 +42,7 @@ declare module "styled-components" {
       xxxLarge: string;
       xxxxLarge: string;
     };
+
     spaces: {
       p500: string;
       p400: string;
@@ -34,6 +52,7 @@ declare module "styled-components" {
       p50: string;
       p25: string;
     };
+
     mq: {
       xs: string;
       sm: string;

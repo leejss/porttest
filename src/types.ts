@@ -1,3 +1,5 @@
+import { FileNode } from "gatsby-plugin-image/dist/src/components/hooks";
+
 // Graphql Query Types
 export interface HeadQueryData {
   site: {
@@ -10,5 +12,23 @@ export interface HeadQueryData {
       siteUrl: string;
       image: string;
     };
+  };
+}
+
+export interface IWork {
+  node: {
+    id: string;
+    html: string;
+    frontmatter: {
+      repo: string;
+      thumbnail: FileNode;
+      title: string;
+    };
+  };
+}
+
+export interface WorksQueryData {
+  allMarkdownRemark: {
+    edges: IWork[];
   };
 }

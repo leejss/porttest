@@ -1,9 +1,23 @@
 import { css, DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
-  textColor: "#f4f7d5",
-  textColorDarker: "#ced1b6",
-  textColorLighter: "#fcfcf5",
+  colors: {
+    primaryDark: "#090f17",
+    secondary: "#ebc86e",
+    secondaryLight: "#f6dea5",
+    secondaryDark: "#6b6349",
+    lightest: "#FFFFFF",
+    lighter: "#F8F8F8",
+    light: "#F3F3F3",
+    mediumLight: "#EEEEEE",
+    medium: "#DDDDDD",
+    mediumDark: "#999999",
+    dark: "#666666",
+    darker: "#444444",
+    darkest: "#333333",
+    black: "#000000",
+    hover: "#47eb5d",
+  },
   fontFamilies: {
     primary:
       '"Roboto", stack-sans, "Open Sans", "Lato", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
