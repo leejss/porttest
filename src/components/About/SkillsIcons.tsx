@@ -9,7 +9,7 @@ export const LanguageIcons: React.FC = () => {
     <>
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_python.png"
+        src="../../../static/images/icons/icon_python.png"
         alt="typescript"
         layout="constrained"
         width={width}
@@ -17,7 +17,7 @@ export const LanguageIcons: React.FC = () => {
       />
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_javascript.png"
+        src="../../../static/images/icons/icon_javascript.png"
         alt="typescript"
         layout="constrained"
         width={width}
@@ -25,7 +25,7 @@ export const LanguageIcons: React.FC = () => {
       />
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_typescript.png"
+        src="../../../static/images/icons/icon_typescript.png"
         alt="typescript"
         layout="constrained"
         width={width}
@@ -40,19 +40,19 @@ export const FrontendIcons: React.FC = () => {
     <>
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_react.png"
+        src="../../../static/images/icons/icon_react.png"
         alt="typescript"
         layout="constrained"
-        width={50}
-        height={50}
+        width={width}
+        height={height}
       />
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_redux.png"
+        src="../../../static/images/icons/icon_redux.png"
         alt="typescript"
         layout="constrained"
-        width={50}
-        height={50}
+        width={width}
+        height={height}
       />
     </>
   );
@@ -63,27 +63,27 @@ export const BackendIcons: React.FC = () => {
     <>
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_nodejs.png"
+        src="../../../static/images/icons/icon_nodejs.png"
         alt="typescript"
         layout="constrained"
-        width={50}
-        height={50}
+        width={width}
+        height={height}
       />
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_firebase.png"
+        src="../../../static/images/icons/icon_firebase.png"
         alt="typescript"
         layout="constrained"
-        width={50}
-        height={50}
+        width={width}
+        height={height}
       />
       <StaticImage
         as="div"
-        src="../../../../static/images/icons/icon_mongodb.png"
+        src="../../../static/images/icons/icon_mongodb.png"
         alt="typescript"
         layout="constrained"
-        width={50}
-        height={50}
+        width={width}
+        height={height}
       />
     </>
   );
